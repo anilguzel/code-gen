@@ -1,0 +1,15 @@
+<Page x:Class="CleanArchGenerator.Wizard.Pages.ProjectSettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Project Settings">
+  <StackPanel Margin="20">
+    <TextBlock Text="Solution Name" />
+    <TextBox x:Name="SolutionNameBox" Width="200" />
+    <TextBlock Text=".NET Version" Margin="0,10,0,0" />
+    <ComboBox x:Name="FrameworkCombo" Width="200">
+      <ComboBoxItem>.NET 8.0</ComboBoxItem>
+      <ComboBoxItem>.NET 9.0</ComboBoxItem>
+    </ComboBox>
+    <Button Content="Next" Width="80" Margin="0,20,0,0" Click="Next_Click"/>
+  </StackPanel>
+</Page>
