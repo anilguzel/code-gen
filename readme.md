@@ -5,7 +5,8 @@ This repository contains a minimal Python-based generator that scaffolds a Clean
 ## Usage
 
 ```bash
-python3 generate_solution.py MySolution --framework net9.0 --db-provider postgresql
+python3 generate_solution.py MySolution --framework net9.0 --db-provider postgresql \
+    --framework-version 1.4.0 --ef-version 8.0.0
 ```
 
 The command creates a `MySolution.sln` and the following project layout under `src/`:
@@ -15,7 +16,7 @@ The command creates a `MySolution.sln` and the following project layout under `s
 - `MySolution.Infrastructure`
 - `MySolution.Api`
 
-Each project targets the selected .NET version and includes placeholder package references such as `Company.Framework`. The Infrastructure project also references the chosen EF Core provider package.
+Each project targets the selected .NET version and includes placeholder package references such as `Company.Framework`. Package versions are centralized in a generated `Directory.Packages.props` file. The Infrastructure project also references the chosen EF Core provider package.
 
 ## Visual Studio Extension (Preview)
 
