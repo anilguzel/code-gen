@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="CleanArchGenerator" Version="0.1" Publisher="Example" />
+    <DisplayName>Clean Architecture Generator</DisplayName>
+    <Description xml:space="preserve">Generates Clean Architecture solutions with EF Core and framework integration.</Description>
+  </Metadata>
+  <Installation InstalledByMsi="false" />
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName=".NET" Version="[4.5, )" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="CleanArchGenerator" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>
